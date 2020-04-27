@@ -23,6 +23,10 @@ app.get("/concertTours", function (req, res) {
     console.log("request get on /concertTours");
     res.send(concertTours);
 });
+app.get("/labels", function (req, res) {
+    console.log("request get on /labels");
+    res.send(labels);
+})
 
 let albums = [{
         year: '1967',
@@ -164,3 +168,4 @@ let concertTours = [{
         year: '1994'
     }
 ];
+labels = ["EMI Columbia", "Tower", "Harvest", "Capitol", "Columbia", "Sony Music", "EMI", "Parlophone"];
